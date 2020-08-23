@@ -1,0 +1,116 @@
+* {
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.inside-traffic {
+	margin:5px 0 0 10px;
+	width:120px;
+	height:380px;
+	background:#000;
+	border-radius:20px;
+}
+.inside-traffic .red , .inside-traffic .yellow , .inside-traffic .green {
+	width:100px;
+	height:100px;
+	border:4px solid #000;
+	border-radius:50%;
+	background:#fff;
+}
+.red {
+	margin:20px 10px 20px 10px;
+	animation-name:traffic-red;
+	animation-delay:1s;
+	animation-duration:4s;
+}
+@keyframes traffic-red {
+	0%,100%{
+		background:red;
+	}
+}
+.yellow {
+	margin:10px 10px 20px 10px;
+	animation-name:traffic-yellow;
+	animation-delay:5s;
+	animation-duration:2s;
+}
+@keyframes traffic-yellow {
+	0%,100% {
+		background:yellow;
+	}
+}
+.green {
+	margin:10px 10px 20px 10px;
+	animation-name:traffic-green;
+	animation-delay:7s;
+	animation-duration:8s;
+}
+@keyframes traffic-green {
+	0%,100% {
+		background:green;
+	}
+}
+.massage .one {
+	color:#fff;
+	position:absolute;
+	top:20px;
+	right:600px;
+	font-size:50px;
+	animation-name:massage-animation-1;
+	animation-delay:1s;
+	animation-duration:4s;
+	font-family:courier;
+}
+@keyframes massage-animation-1 {
+	0%,99% {
+		color:red
+	}
+}
+.massage .two {
+	color:#fff;
+	position:absolute;
+	top:20px;
+	right:400px;
+	font-size:50px;
+	animation-name:massage-animation-2;
+	animation-delay:5s;
+	animation-duration:2s;
+	font-family:courier;
+}
+@keyframes massage-animation-2 {
+	0%,99% {
+		color:yellow;
+	}
+}
+.massage .three {
+	color:#fff;
+	position:absolute;
+	top:20px;
+	right:300px;
+	font-size:50px;
+	animation-name:massage-animation-3;
+	animation-delay:7s;
+	animation-duration:8s;
+	font-family:courier;
+}
+@keyframes massage-animation-3 {
+	0%,99% {
+		color:green;
+	}
+}
+/**/
+.car .image {
+	width:12%;
+	position:relative;
+	animation-name:car-drive;
+	animation-delay:7s;
+	animation-duration:3s;
+	animation-iteration-count:3;
+}
+@keyframes car-drive {
+	0% {
+		left:0;
+	}
+	100% {
+		left:1000px;
+	}
+}
