@@ -8,7 +8,6 @@
   position: absolute;
   top: 10px;
   left: 50%;
-  border: 1px solid red;
   height: 220px;
   width: 80px;
   background: #000;
@@ -50,17 +49,16 @@
 .trafic-light .lights .red {
   animation-name: red;
   animation-duration: 4s;
-  animation-delay: 2s;
 }
 .trafic-light .lights .yellow {
   animation-name: yellow;
   animation-duration: 4s;
-  animation-delay: 6s;
+  animation-delay: 4s;
 }
 .trafic-light .lights .green {
   animation-name: green;
-  animation-duration: 4s;
-  animation-delay: 10s;
+  animation-duration: 6s;
+  animation-delay: 8s;
 }
 
 @keyframes red {
@@ -90,8 +88,25 @@
     box-shadow: 0 0 15px #4FB954;
   }
 }
+.car {
+  position: absolute;
+  top: 260px;
+}
 .car img {
   width: 200px;
+  position: absolute;
+  animation-name: car;
+  animation-duration: 6s;
+  animation-delay: 8.2000078s;
+}
+
+@keyframes car {
+  from {
+    left: 0;
+  }
+  to {
+    left: 480px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
