@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .trafic-light {
     position: absolute;
     top: 10px;
     left: 50%;
-    border: 1px solid red;
     height: 220px;
     width: 80px;
     background: #000;
@@ -48,17 +48,16 @@
         .red {
             animation-name: red;
             animation-duration: 4s;
-            animation-delay: 2s;
         }
         .yellow {
             animation-name: yellow;
             animation-duration: 4s;
-            animation-delay: 6s;
+            animation-delay: 4s;
         }
         .green {
             animation-name: green;   
-            animation-duration: 4s;
-            animation-delay: 10s;
+            animation-duration: 6s;
+            animation-delay: 8s;
         }
     }
 } 
@@ -93,8 +92,22 @@
 }
 
 .car {
-    
+    position: absolute;
+    top: 260px;
     img {
         width: 200px;
+        position: absolute;
+        animation-name: car;
+        animation-duration: 6s;
+        animation-delay: 8.2000078s;
+    }
+}
+
+@keyframes car {
+    from {
+        left: 0;
+    }
+    to {
+        left: 480px;
     }
 }
